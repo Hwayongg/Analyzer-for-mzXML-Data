@@ -1,24 +1,24 @@
 # -*- coding: euc-kr -*-
 # Made by HY.Jang
-# input_module.py >> .mzXMLÆÄÀÏÀ» ÆÄÀÌ½ã¿¡ ·ÎµåÇØÁÜ
+# input_module.py >> .mzXMLÃ†Ã„Ã€ÃÃ€Â» Ã†Ã„Ã€ÃŒÂ½Ã£Â¿Â¡ Â·ÃÂµÃ¥Ã‡Ã˜ÃÃœ
 '''
-from pyopenms import ~ (.mzXML È®ÀåÀÚ¸¦ ¿­ °Ô ÇØÁÖ´Â ÆĞÅ°Áö)
+from pyopenms import ~ (.mzXML ÃˆÂ®Ã€Ã¥Ã€ÃšÂ¸Â¦ Â¿Â­ Â°Ã” Ã‡Ã˜ÃÃ–Â´Ã‚ Ã†ÃÃ…Â°ÃÃ¶)
 '''
 
-# 2. pyopenms¸¦ ÀÌ¿ë, mzXMLÆÄÀÏÀ» ÆÄÀÌ½ã¿¡ ·Îµå
+# 2. pyopenmsÂ¸Â¦ Ã€ÃŒÂ¿Ã«, mzXMLÃ†Ã„Ã€ÃÃ€Â» Ã†Ã„Ã€ÃŒÂ½Ã£Â¿Â¡ Â·ÃÂµÃ¥
 class file_loader:
     file_path = ''
     def __init__(self):
-        print("¦® 2. ÇÁ·Î±×·¥¿¡ Áú·®ºĞ¼® µ¥ÀÌÅÍ ºÒ·¯¿À±â")
+        print("Â¦Â® 2. Ã‡ÃÂ·ÃÂ±Ã—Â·Â¥Â¿Â¡ ÃÃºÂ·Â®ÂºÃÂ¼Â® ÂµÂ¥Ã€ÃŒÃ…Ã ÂºÃ’Â·Â¯Â¿Ã€Â±Ã¢")
     def input_path(self):
-        self.file_path = input("¦­ >>> mzXMLÆÄÀÏÀÇ °æ·Î¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä: ")
+        self.file_path = input("Â¦Â­ >>> mzXMLÃ†Ã„Ã€ÃÃ€Ã‡ Â°Ã¦Â·ÃÂ¸Â¦ Ã€Ã”Â·Ã‚Ã‡Ã˜ÃÃ–Â¼Â¼Â¿Ã¤: ")
         if self.file_path == 'sample':
             self.file_path = 'G:\Python\sample\sample.mzXML'
-        print("¦­ >>> ÀÔ·ÂµÈ °æ·Î´Â [%s] ÀÔ´Ï´Ù." %self.file_path)
+        print("Â¦Â­ >>> Ã€Ã”Â·Ã‚ÂµÃˆ Â°Ã¦Â·ÃÂ´Ã‚ [%s] Ã€Ã”Â´ÃÂ´Ã™." %self.file_path)
     def file_open(self):
-        print("¦± >>> Complete!\n\n")
+        print("Â¦Â± >>> Complete!\n\n")
 
-# ÆÄÀÏ ÆĞ½º¸¦ Àß¸ø ÀÔ·ÂÇßÀ» °æ¿ì¿¡ ´Ù½Ã ÀÔ·ÂÇÏµµ·Ï ÇÏ´Â ÄÚµå¸¦ ³Ö¾îº¸¸é ¾î¶³±î?
+# Ã†Ã„Ã€Ã Ã†ÃÂ½ÂºÂ¸Â¦ Ã€ÃŸÂ¸Ã¸ Ã€Ã”Â·Ã‚Ã‡ÃŸÃ€Â» Â°Ã¦Â¿Ã¬Â¿Â¡ Â´Ã™Â½Ãƒ Ã€Ã”Â·Ã‚Ã‡ÃÂµÂµÂ·Ã Ã‡ÃÂ´Ã‚ Ã„ÃšÂµÃ¥Â¸Â¦ Â³Ã–Â¾Ã®ÂºÂ¸Â¸Ã© Â¾Ã®Â¶Â³Â±Ã®?
 
 
 
@@ -26,6 +26,6 @@ class file_loader:
 
 
 if __name__=="__main__":
-    file_path = 'G:\Python\sample\sample.mzXML'
-    print('''##### file_path¿¡ ¿¹Á¦°ª ÀÔ·Â ¿Ï·á! #####
-##### path: %s #####''' %file_path) 
+    file_path = 'H:\Python\sample.mzXML'
+    print('''##### sampleì˜ file pathë¥¼ ì…ë ¥ #####
+##### path: %s #####''' %file_path)
