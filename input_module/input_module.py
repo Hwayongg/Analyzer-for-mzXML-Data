@@ -2,21 +2,20 @@
 # Made by HY.Jang
 # input_module.py >> .mzXMLÆÄÀÏÀ» ÆÄÀÌ½ã¿¡ ·ÎµåÇØÁÜ
 '''
+import하기(모듈)
+
 from pyopenms import ~ (.mzXML)
 '''
 
-import os
-import sys
-sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+import pyOpenMS
 
-from library.pyOpenMS.pyopenms import *
+
+
+
 
 
 '''
-import ..library.pyopenms
 
-
-pyopenms.__version__
 # 2. pyopenms¸¦ ÀÌ¿ë, mzXMLÆÄÀÏÀ» ÆÄÀÌ½ã¿¡ ·Îµå
 class file_loader:
     file_path = ''
