@@ -1,22 +1,12 @@
 # -*- coding: utf-8 -*-
 # Made by HY.Jang
-# input_module.py >> .mzXMLÆÄÀÏÀ» ÆÄÀÌ½ã¿¡ ·ÎµåÇØÁÜ
-'''
-import하기(모듈)
+# input_module.py
 
+
+# 1. import하기
 from pyopenms import ~ (.mzXML)
-'''
 
-import pyOpenMS
-
-
-
-
-
-
-'''
-
-# 2. pyopenms¸¦ ÀÌ¿ë, mzXMLÆÄÀÏÀ» ÆÄÀÌ½ã¿¡ ·Îµå
+# 2. pyopenms를 이용한 샘플파일로드
 class file_loader:
     file_path = ''
     def __init__(self):
@@ -32,11 +22,8 @@ class file_loader:
 
 
 
-'''
 
-
-'''
 if __name__=="__main__":
     file_path = 'H:\Python\sample.mzXML'
     print('''##### sample의 file path를 입력 #####
-##### path: %s #####''' %file_path)'''
+##### path: %s #####''' %file_path''')
