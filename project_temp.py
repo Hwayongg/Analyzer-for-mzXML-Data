@@ -33,8 +33,6 @@ axes.plot(*zip(*MassSpectrum))
 axes.set_xlabel("m/z")
 axes.set_ylaber("Intensity")
 
-plt.savefig('MS_output.pdf')
-
 #MS를 위한 list 설정
 RetentionTime = []
 BasePeakIntensity = []
@@ -52,5 +50,3 @@ fig, axes = plt.subplots(figsize = (14,4))
 axes.plot(*zip(*BasePeakChromatogram))
 axes.set_xlabel("Retention Time")
 axes.set_ylaber("Base Peak Intensity")
-
-plt.savefig('BPC_output.pdf')
