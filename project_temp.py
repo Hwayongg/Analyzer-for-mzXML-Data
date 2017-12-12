@@ -6,8 +6,9 @@ import matplotlib.pyplot as plt
 exp = pyopenms.MSExperiment()
 pyopenms.FileHandler().loadExperiment('E:\Python\sample.mzXML', exp)
 
+
+#MS scan number 1 만 load할 수 있도록 하는 parameter
 i = 1
-j = 1
 
 #MS를 위한 list 설정
 MZ = []
@@ -16,15 +17,13 @@ MassSpectrum = []
 
 #MS 를 위한 tuple 생성
 for spectrum in exp:
-	for peak in spectrum:
+        for peak in spectrum:
 		MZ = peak.getMZ()
 		Intensity = peak.getIntensity()
 		MassSpectrum = append((MZ, Intensity))
-        
-		j += 1
 	i += 1
 
-	if i ==2 :
+	if i == 2 :
 		break
 
 #MS plotting
